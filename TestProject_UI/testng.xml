@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite">
+    <listeners>
+        <listener class-name="listeners.ExtentTestNGListener"/>
+    </listeners>
+<!--    <parameter name="web driver.chrome.driver" value="C:\\Driver\\chromedriver-win64\\chromedriver.exe"/>-->
+    <parameter name="env" value="sit" /> <!-- Specify the desired environment -->
+    <test name="Feature Set 1">
+        <classes>
+            <class name="runners.CucumberTestRunner"/>
+        </classes>
+
+    </test>
+
+</suite>
